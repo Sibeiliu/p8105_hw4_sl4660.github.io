@@ -1,7 +1,19 @@
 ---
-title: "Holy cow!"
+title: "Sibei's HW 4"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-### I have a webpage!
 
-And I can put all kinds of stuff on it!
+**This is Sibei Liu's personal website**
+
+
+# Basic information
+
+# Education Information
+
+# Life in China and America
+
+

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>This is Sibei Liu’s Acedemic Introduction</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="mailto:&lt;sl4660@cumc.columbia.edu.com&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/%E6%80%9D%E8%93%93-%E5%88%98-9110b314b/">
+    <span class="fa fa-camera-retro"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/Sibeiliu">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">This is Sibei Liu’s Acedemic Introduction</h1>
+
+</div>
+
+
+<div id="education-background" class="section level1">
+<h1>Education Background</h1>
+<p>09/2019- Columbia University, School of Public Health</p>
+<p>Major: Biostatistics</p>
+<p>09/2014-06/2019 Jilin University, School of Public Health</p>
+<p>Major: Information Management &amp; Information System (Medical Information Management)</p>
+<p>Degree: Bachelor of Management &amp; Bachelor of Preventive Medicine</p>
+<p>Average: 87.28/100</p>
+<p>Major Ranking: 1/28</p>
+<p>IELTS: 7.5</p>
+<p>GRE:329+3</p>
+</div>
+<div id="publication" class="section level1">
+<h1>Publication</h1>
+<p>￭ Shiyu ZHANG, Wei WANG, Chenglin TAO,<strong>Sibei LIU</strong>; Building the Enterprise Technology Threat Warning Model based on the Perspective of the Patent Portfolio Analysis (Chinese), December, 2016; Journal of Information; ISSN: 1002-1965</p>
+<p>￭ Pallavi Misra,<strong>Sibei LIU</strong>, Xiangfei Meng, What DNA methylation modifications and/or genetic variations interact with childhood maltreatment in the development of depression: A systematic review, Journal of Affective Disorders,Volume 252,2019, Pages 325-333, ISSN 0165-0327,</p>
+<p>Accepted: ￭ Tingting Gao, Xiangfei Meng, Yueyang Hu, Zeying Qin, Hui Ren, <strong>Sibei LIU</strong>, The Role of School Connectedness and Maladaptive Cognitions in the Association between Stress and Internet Addiction: A Serial Mediation Model, Perspectives in Psychiatric Care</p>
+<p>Submitted: ￭ Muzi Li,<strong>Sibei LIU</strong>, Xiangfei Meng, Interactions of child maltreatment and genetic variations in adult psychopathology:A systematic review (Abstract), Canadian Society for Epidemiology and Biostatistics 2019 Abstracts.</p>
+</div>
+<div id="internship-experience" class="section level1">
+<h1>Internship Experience</h1>
+<p>07/2018-10/2018</p>
+<p>Mitacs Summer Internship Program: Child Maltreatment and Genetic Variation in Adult Psychopathology: A Systematic Review Department of Psychiatry at McGill University Supervisor: Dr Xiangfei Meng Responsibility:</p>
+<p>Followed the standard process of Meta-analysis:</p>
+<p>￭ Extracted available data and completed the quality evaluation for the screened paper.</p>
+<p>￭ Did the heterogeneity analysis, divided and summarized quantitative and qualitative parts.</p>
+</div>
+<div id="research-experience" class="section level1">
+<h1>Research Experience</h1>
+<p>03/2018-05/2018 The Influencing Factor of Teenager Smoking in Liaoning Province (A Global Youth Tobacco Survey in Liaoning )<br />
+Department of Epidemiology and Health Statistics at Jilin University</p>
+<p>Supervisor: Associate Prof. Lina JIN, Associate Prof Yan Yao</p>
+<p>Responsibility:</p>
+<p>￭ Determined the innovative perspective of data analysis.</p>
+<p>￭ Used the complex sampling pack in SPSS to analyze multistage stratified cluster sampling, including doing the Frequency to describe the data distribution, completing the Chi-square analysis and the logistic analysis to find risk factors of teenager smoking.</p>
+<p>￭ Wrote the manuscript.</p>
+</div>
+<div id="honors-awards" class="section level1">
+<h1>Honors &amp; Awards</h1>
+<p>05/2018 China Scholarship Council- Mitacs Summer Internship funding (More than 30000RMB )</p>
+<p>09/2017 China National Scholarship in Academic Year 2016-17 awarded by Ministry of Education (0.2%)</p>
+<p>10/2016 The Second Prize of FLTRP Cup English Speech Contest in 2016 (10%)</p>
+<p>10/2015 The Second Prize of FLTRP Cup English Writing Contest in 2015 (10%)</p>
+<p>09/2016 &amp; 09/2018 The First Scholarship in Academic Years 2015-16 and 2016-17 at Jilin University (5%)</p>
+<p>09/2015 The Second Scholarship in Academic Year 2014-2015 at Jilin University (10%)</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
