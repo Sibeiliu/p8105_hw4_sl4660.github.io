@@ -13,9 +13,7 @@ Gender: Female
 
 Self_Intro:
 
-
-
-
+I am so lucky to have the opportunity to study biostatistics at Columbia University and have the chance to embrace a whole new world. Hopefully, during those two years, I can harvest a beautiful memory, a lot of friends and achieve my initial goal.
 
 
 # Education Information
@@ -27,8 +25,20 @@ Self_Intro:
 
 **China**:
 
+Here is my dog:
+
+
+![](image/mypuppy4.jpg)
+
+Here is in my undergraduate graduation ceremony:
+
+
+![](image/graduation2.jpg)
+
 **America**:
 
+A photo of the landmark in Columbia University 
 
+![](image/maincampus3.jpg)
 
 
