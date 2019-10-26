@@ -1,19 +1,34 @@
 ---
-title: "Sibei's HW 4"
+title: "This is Sibei Liu's personal website"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-
-**This is Sibei Liu's personal website**
-
-
 # Basic information
+Birth: 1996.02.23
+
+Gender: Female
+
+Self_Intro:
+
+
+
+
+
 
 # Education Information
+ 
+ Please see [here](about.html) for detailed education experience
+
 
 # Life in China and America
+
+**China**:
+
+**America**:
+
+
 
 
